@@ -60,6 +60,9 @@ DELETE
 - BERHASIL:
   - status: OK
   - data : pesan sukses dalam proses penghapusan file
+- FILE TIDAK DITEMUKAN:
+  - status: ERROR
+  - data: pesan file tidak ditemukan
 - GAGAL:
   - status: ERROR
   - err : pesan kesalahan atau error
