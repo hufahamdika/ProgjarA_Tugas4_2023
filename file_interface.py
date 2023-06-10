@@ -53,7 +53,8 @@ class FileInterface:
                 os.remove(filename)
                 return dict(status='OK', data=f"File {filename} deleted successfully")
             else:
-                return dict(status='ERROR', data=f"File {filename} is not found")
+                return dict(status='ERROR', data=f"File {filename} is not found",
+                            data="")
         except Exception as e:
             return dict(status='ERROR', err=str(e),
                         data=f"Failed to delete {filename}")
