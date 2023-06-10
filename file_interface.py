@@ -54,7 +54,7 @@ class FileInterface:
                 return dict(status='OK', data=f"File {filename} deleted successfully")
             else:
                 return dict(status='ERROR', data=f"File {filename} is not found",
-                            data="")
+                            err="")
         except Exception as e:
             return dict(status='ERROR', err=str(e),
                         data=f"Failed to delete {filename}")
